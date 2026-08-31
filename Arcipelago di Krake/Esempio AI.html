@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La mia prima mappa Leaflet</title>
+
+    <!-- 1. Fogli di stile CSS di Leaflet -->
+    <link rel="stylesheet" href="css/leaflet.css" />
+
+    <script src="js/leaflet.js"></script>
+
+    <!-- 4. Il file JavaScript di Leaflet -->
+    <style>
+        /* 2. Definisci l'altezza della mappa, altrimenti non si vedrà */
+        #map {
+            //height: 1000px;
+            width: 80%;
+            aspect-ratio: 1 / 1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>La mia mappa interattiva</h1>
+    
+    <!-- 3. Il contenitore HTML dove apparirà la mappa -->
+    <div id="map"></div>
+
+    <script>
+        // 1. Definiamo la mappa, definiamo le dimensioni in pixel della tua immagine [Altezza, Larghezza]
+        var imagePath = 'images/Mappa/Arcipelago di Krake.jpg';
+
+        var bounds = [[0, 0], [3072, 3072]];
+        
+        var mapElement = document.getElementById('map');
+        var mapSize = mapElement.getBoundingClientRect();
+
+        // 2. Diciamo a Leaflet di usare coordinate piane (X, Y) senza la distorsione del pianeta Terra
+        var map = L.map('map', {
+            crs: L.CRS.Simple,
+            //minZoom: -1.8, // Ti permette di fare un po' di zoom all'indietro per vedere tutta la mappa
+            minZoom: Math.log2(mapSize.width / 3072), // Imposta zoom minimo adattevole all'immagine
+            maxZoom: 4,   // Limita lo zoom in avanti per non far sgranare troppo la tua immagine
+            maxBounds: bounds,
+            maxBoundsViscosity: 1.0
+        });
+
+        // 3. Carichiamo l'immagine della mappa
+        L.imageOverlay(imagePath, bounds).addTo(map);
+
+        // Lo zoom a cui l'intera mappa entra nel frame
+        //var mapSize = map.getSize();
+
+        //var minimalZoom = Math.log2(mapSize.x / 3072);
+        //map.setMinZoom(minimalZoom);        
+
+        map.fitBounds(bounds);
+        
+    </script>
+
+</body>
+
+</html>
+
+    

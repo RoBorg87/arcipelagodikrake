@@ -1,0 +1,106 @@
+#map {
+    /*height: 1000px;*/
+    width: 50%;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #addcf9; /* GG blue */
+    /*background: linear-gradient(135deg, rgb(18, 24, 38) 0%, rgb(35, 58, 95) 52%, rgb(61, 127, 137) 100%); /* GG gradient */
+}
+
+#mapContainer {
+    width: min(90vw);
+    aspect-ratio: 3 / 2;
+    background-image: url('../images/Background/Elfa Tiefling.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-border-radius: 10%;
+    border: 5px solid rgb(18, 24, 38);
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* POPUP DELLE REGIONI */
+.regionPopup .leaflet-popup-content-wrapper {
+    background: #f3ead2;
+    color: #302719;
+    border: 2px solid #8b6f47;
+    border-radius: 4px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.regionPopup .leaflet-popup-tip {
+    background: #f3ead2;
+    border-left: 2px solid #8b6f47;
+    border-top: 2px solid #8b6f47;
+}
+
+.regionPopup .leaflet-popup-content {
+    margin: 12px 16px;
+}
+
+.regionInfo {
+    min-width: 180px;
+    font-family: Georgia, serif;
+}
+
+.regionInfo h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #8b6f47;
+    padding-bottom: 5px;
+}
+
+.regionInfo div {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+
+/* POPUP DELLE CITTA' */
+.cityPopup .leaflet-popup-content-wrapper {
+    background: rgba(35, 29, 22, 0.92);
+    color: #f1e4c8;
+    border: 1px solid #b99a65;
+    border-radius: 3px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.cityPopup .leaflet-popup-tip {
+    background: rgba(35, 29, 22, 0.92);
+}
+
+.cityPopup .leaflet-popup-content {
+    margin: 8px 12px;
+}
+
+.cityInfo {
+    min-width: 120px;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+.cityInfo h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.cityInfo div {
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+.cityInfo .label {
+    color: #b99a65;
+    font-weight: bold;
+}
