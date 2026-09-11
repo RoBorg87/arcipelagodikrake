@@ -57,3 +57,18 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick); */
+
+// 8. Tooltip Coordinate
+var coordinateDisplay = L.DomUtil.create(
+    'div',
+    'coordinateDisplay'
+);
+
+map.getContainer().appendChild(coordinateDisplay);
+
+map.on('mousemove', function(e) {
+
+    coordinateDisplay.innerHTML =
+        'x: ' + Math.round(e.latlng.lng) +
+        '<br>y: ' + Math.round(e.latlng.lat);
+});

@@ -58,7 +58,7 @@ function createCity(data) {
         city.setOpacity(1);
     });
 
-    trigger.on('click', function() {
+    trigger.on('mouseover', function() {
         L.popup({className: 'cityPopup'})
         .setLatLng(popupPosition)
         .setContent(`
@@ -130,11 +130,11 @@ function createRegion(data) {
     
     // Controllo Mouseover
     trigger.on('mouseover', function() {
-        region.setBounds(scaleBoundsRegions(bounds, 1.1));
+        region.setBounds(scaleBoundsRegions(bounds, 1.02));
         region.setOpacity(1);
     });
 
-    trigger.on('click', function() {
+    trigger.on('mouseover', function() {
         L.popup({className: 'regionPopup'})
             .setLatLng(popupPosition)
             .setContent(`
