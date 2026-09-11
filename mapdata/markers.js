@@ -1,35 +1,38 @@
-/* var polygon = L.polygon([
-    [500, 500],
-    [600, 600],
-    [500, 600]
-]).addTo(map);
-
-polygon.bindPopup("I am a polygon."); */
-
-var marker = L.marker(
-    [200,500]
-).addTo(map);
-
-marker.bindPopup("I am a marker.");
-
-var marker2 = L.marker(
-    [600,500]
-).addTo(map);
-
-marker2.bindPopup("I am a marker.");
-
-// Crea una linea di collegamento tra due POI
-var travel = L.polyline([marker2.getLatLng(), marker.getLatLng()]).addTo(map);
-
-/* EVENTO PER CLICK SU MAPPA
-   -> MOSTRA COORDINATE */
-var popup = L.popup();
-
-function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(map);
-}
-
-map.on('click', onMapClick);
+var poi = [
+    {
+        nome: 'Nella Tana del Bisciòn di Brena',
+        x: 600,
+        y: 450,
+        descrizione: 'Un piccolo villaggio e un enorme albero custode, stravolti da un oscura leggenda.'
+    },
+    {
+        nome: 'Nel Sogno della Torre d\'Inverno',
+        x: 750,
+        y: 300,
+        descrizione: 'Una faida vecchia di un secolo sopita, ma non spenta, sotto un manto di rancore e magia.'
+    },
+    {
+        nome: 'Misteriose Scomparse al Villaggio di Rima',
+        x: 750,
+        y: 300,
+        descrizione: 'Un villaggio il cui destino è ormai segnato... ma forse qualcuno può ancora ritrovare la speranza.'
+    },
+    {
+        nome: 'Il Tesoro oltre il Ponte del Diavolo',
+        x: 750,
+        y: 300,
+        descrizione: 'La brama e la scaltrezza dei nani fu la loro rovina. Ma ora nuove forze giocano con la loro eredità.'
+    },
+    {
+        nome: 'Fuga dalla Biblioteca dei Mondi',
+        x: 750,
+        y: 300,
+        descrizione: 'Un luogo mutevole e impossibile, racchiuso tra le pagine di un libro creato per non essere mai terminato.'
+    },
+    {
+        nome: 'Occhi Rossi nelle Acque Nere',
+        x: 528,
+        y: 438,
+        descrizione: 'Un furto e un omicidio in un luogo in cui fidarsi di chiunque sembra impossibile.'
+    }
+];

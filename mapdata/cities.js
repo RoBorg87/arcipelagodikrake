@@ -3,14 +3,16 @@ var cities = [
     {
         image: 'images/Città/Acquenere.png',
         nome: 'Acque Nere',
-        popolazione: 12000,
-        pericolo: 1,
+        popolazione: 250,
+        pericolo: 5,
         x: 410, // Posizione orizzontale immagine (punto basso-sinistra)
         y: 337, // Posizione orizzontale immagine (punto basso-sinistra)
         width: 345, // Risoluzione orizzontale immagine
         height: 174, // Risoluzione verticale immagine
         popupx: -80, // Offset orizzontale popup
         popupy: 40, // Offset verticale popup
+        quest: 'Occhi Rossi nelle Acque Nere',
+        description: 'Un furto e un omicidio in un luogo in cui fidarsi di chiunque sembra impossibile.',
         trigger: [[
             [344, 405],
             [345, 570],
@@ -49,8 +51,8 @@ var cities = [
     {
         image: 'images/Città/Ferrinsburg.png',
         nome: 'Ferrinsburg',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 8500,
+        pericolo: 1,
         x: 650, // Posizione orizzontale immagine (punto basso-sinistra)
         y: 1379, // Posizione orizzontale immagine (punto basso-sinistra)
         width: 371, // Risoluzione orizzontale immagine
@@ -80,7 +82,7 @@ var cities = [
     {
         image: 'images/Città/Tanfert.png',
         nome: 'Tanfert',
-        popolazione: 12000,
+        popolazione: 300,
         pericolo: 3,
         x: 604,
         y: 1937,
@@ -110,8 +112,8 @@ var cities = [
     {
         image: 'images/Città/Rovine Urlanti.png',
         nome: 'Rovine Urlanti',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 0,
+        pericolo: 6,
         x: 1114,
         y: 2151,
         width: 245,
@@ -136,7 +138,7 @@ var cities = [
     {
         image: 'images/Città/Rima.png',
         nome: 'Rima',
-        popolazione: 12000,
+        popolazione: 38,
         pericolo: 3,
         x: 1148,
         y: 1910,
@@ -144,6 +146,8 @@ var cities = [
         height: 162,
         popupx: 0,
         popupy: 0,
+        quest: 'Misteriose Scomparse al Villaggio di Rima',
+        description: 'Un villaggio il cui destino è ormai segnato... ma forse qualcuno può ancora ritrovare la speranza.',
         trigger: [[
             [1908, 1147],
             [1916, 1246],
@@ -163,8 +167,8 @@ var cities = [
     {
         image: 'images/Città/Nordon.png',
         nome: 'Nordon',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 87,
+        pericolo: 5,
         x: 1834,
         y: 2306,
         width: 247,
@@ -189,8 +193,8 @@ var cities = [
     {
         image: 'images/Città/Cahld.png',
         nome: 'Cahld',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 27,
+        pericolo: 1,
         x: 1109,
         y: 1193,
         width: 249,
@@ -217,7 +221,7 @@ var cities = [
     {
         image: 'images/Città/Brena.png',
         nome: 'Brena',
-        popolazione: 12000,
+        popolazione: 57,
         pericolo: 3,
         x: 1723,
         y: 1616,
@@ -225,6 +229,8 @@ var cities = [
         height: 294,
         popupx: 0,
         popupy: 0,
+        quest: 'Nella Tana del Bisciòn di Brena',
+        description: 'Un piccolo villaggio e un enorme albero custode, stravolti da un oscura leggenda.',
         trigger: [[
             [1625, 1772],
             [1635, 1882],
@@ -250,14 +256,16 @@ var cities = [
     {
         image: 'images/Città/La Torre Bianca.png',
         nome: 'La Torre Bianca',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 1,
+        pericolo: 9,
         x: 2257,
         y: 2121,
         width: 268,
         height: 265,
         popupx: 0,
         popupy: 0,
+        quest: 'Nel Sogno della Torre d\'Inverno',
+        description: 'Una faida vecchia di un secolo sopita, ma non spenta, sotto un manto di rancore e magia.',
         trigger: [[
             [2121, 2269],
             [2128, 2380],
@@ -279,8 +287,8 @@ var cities = [
     {
         image: 'images/Città/Locanda Sottocolle.png',
         nome: 'Locanda Sottocolle',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 8,
+        pericolo: 2,
         x: 1938,
         y: 1402,
         width: 351,
@@ -308,8 +316,8 @@ var cities = [
     {
         image: 'images/Città/Pietrafonda.png',
         nome: 'Pietrafonda',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 327,
+        pericolo: 4,
         x: 2124,
         y: 1011,
         width: 358,
@@ -336,14 +344,16 @@ var cities = [
     {
         image: 'images/Città/La Bocca del Diavolo.png',
         nome: 'La Bocca del Diavolo',
-        popolazione: 12000,
-        pericolo: 3,
+        popolazione: 0,
+        pericolo: 7,
         x: 1560,
         y: 802,
         width: 349,
         height: 257,
         popupx: 0,
         popupy: 0,
+        quest: 'Il Tesoro oltre il Ponte del Diavolo',
+        description: 'La brama e la scaltrezza dei nani fu la loro rovina. Ma ora nuove forze giocano con la loro eredità.',
         trigger: [[
             [800, 1629],
             [808, 1757],

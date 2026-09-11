@@ -279,6 +279,8 @@ var regions = [
         height: 679, // Risoluzione verticale immagine
         popupx: -140, // Offset orizzontale popup
         popupy: -1100, // Offset verticale popup
+        quest: 'Fuga dalla Biblioteca dei Mondi',
+        description: 'Un luogo mutevole e impossibile, racchiuso tra le pagine di un libro creato per non essere mai terminato.',
         trigger: [[
             [2370, 2677],
             [2478, 2915],

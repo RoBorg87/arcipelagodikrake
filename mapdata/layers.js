@@ -74,6 +74,13 @@ function createCity(data) {
                     <span class="label">Pericolo</span><br>
                     ${data.pericolo}
                 </div>
+
+            ${data.quest ? `
+                <div>
+                    <span class="label">${data.quest}</span><br>
+                    ${data.description}
+                </div>
+            ` : ''}
             </div>
         `)
         .openOn(map);
@@ -142,6 +149,12 @@ function createRegion(data) {
                 <h3>${data.nome}</h3>
                 <div>Popolazione: ${data.popolazione}</div>
                 <div>Pericolo: ${data.pericolo}</div>
+                ${data.quest ? `
+                    <div>
+                        <span class="label"><b>${data.quest}</b></span><br>
+                        ${data.description}
+                    </div>
+                ` : ''}
             </div>
             `)
             .openOn(map);
@@ -159,12 +172,25 @@ function createRegion(data) {
     };
 }
 
-/* CREA IL POI
-function createPOI(imagePath, bounds, data) {
+/* CREA IL POI */
+/*function createPOI(imagePath, bounds, data) {
 
+    var marker = L.marker(
+        [data.y, data.x],
+        {
+            pane: 'poi'
+        }
+    ).addTo(poiLayer);
 
+    marker.bindPopup(`
+        <div class="poiInfo">
+            <h3>${data.nome}</h3>
+            <div>${data.descrizione}</div>
+        </div>
+    `);
 
-} */
+    return marker;
+}*/
 
 /* REGOLA IL RIDIMENSIONAMENTO DELLA CITTA' */
 function scaleBoundsCities(bounds, scale) {
@@ -226,4 +252,4 @@ regions.forEach(function(regionData) {
 /* INSERISCE LE REGIONI, LE CITTA' E I POI NELLA MAPPA */
 regionsLayer.addTo(map);
 citiesLayer.addTo(map);
-poiLayer.addTo(map);
+//poiLayer.addTo(map);
