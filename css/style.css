@@ -106,7 +106,8 @@ body {
     font-weight: bold;
 }
 
-.coordinateDisplay {
+/* FOR DEBUG PURPOSES  */
+/*.coordinateDisplay {
     position: absolute;
 
     top: 10px;
@@ -125,4 +126,4 @@ body {
     font-size: 14px;
 
     pointer-events: none;
-}
+}*/
