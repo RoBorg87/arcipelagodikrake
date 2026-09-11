@@ -37,6 +37,7 @@ body {
 }
 
 .regionPopup .leaflet-popup-tip {
+    display: none;
     background: #f3ead2;
     border-left: 2px solid #8b6f47;
     border-top: 2px solid #8b6f47;
@@ -103,4 +104,25 @@ body {
 .cityInfo .label {
     color: #b99a65;
     font-weight: bold;
+}
+
+.coordinateDisplay {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    z-index: 1000;
+
+    padding: 8px 12px;
+
+    background: rgba(255, 255, 255, 0.85);
+
+    border: 1px solid #777;
+    border-radius: 4px;
+
+    font-family: monospace;
+    font-size: 14px;
+
+    pointer-events: none;
 }
