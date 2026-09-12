@@ -107,7 +107,7 @@ body {
 }
 
 /* FOR DEBUG PURPOSES  */
-/*.coordinateDisplay {
+.coordinateDisplay {
     position: absolute;
 
     top: 10px;
@@ -126,4 +126,79 @@ body {
     font-size: 14px;
 
     pointer-events: none;
-}*/
+}
+
+
+/* POPUP DELLE MISSIONI */
+.poiPopup .leaflet-popup-content-wrapper {
+    background: #eee3c5;
+    color: #2b241b;
+    border: 2px solid #4a3926;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.45);
+}
+
+.poiPopup .leaflet-popup-content {
+    margin: 16px 20px;
+    min-width: 240px;
+    max-width: 320px;
+}
+
+
+/* TITOLO DELLA MISSIONE */
+.poiInfo h3 {
+    margin: 0 0 12px 0;
+    padding-bottom: 8px;
+
+    color: #4a3020;
+
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.2;
+
+    text-align: center;
+
+    border-bottom: 3px ridge red;
+}
+
+
+/* DESCRIZIONE */
+.poiInfo div {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.45;
+
+    text-align: justify;
+}
+
+
+/* TRIANGOLINO */
+.poiPopup .leaflet-popup-tip {
+    background: #eee3c5;
+    border: 1px solid #4a3926;
+}
+
+
+/* PULSANTE DI CHIUSURA */
+.poiPopup .leaflet-popup-close-button {
+    color: #4a3926 !important;
+    font-size: 20px !important;
+}
+
+.poiPopup .leaflet-popup-close-button:hover {
+    color: #000 !important;
+}
+
+.questLabel {
+    margin-bottom: 5px;
+
+    color: #756044;
+
+    font-family: Georgia, serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    text-align: center;
+}
