@@ -11,8 +11,8 @@ var cities = [
         height: 174, // Risoluzione verticale immagine
         popupx: -80, // Offset orizzontale popup
         popupy: 40, // Offset verticale popup
-        quest: 'Occhi Rossi nelle Acque Nere',
-        description: 'Un furto e un omicidio in un luogo in cui fidarsi di chiunque sembra impossibile.',
+        //quest: 'Occhi Rossi nelle Acque Nere',
+        //description: 'Un furto e un omicidio in un luogo in cui fidarsi di chiunque sembra impossibile.',
         trigger: [[
             [344, 405],
             [345, 570],
@@ -146,8 +146,8 @@ var cities = [
         height: 162,
         popupx: 0,
         popupy: 0,
-        quest: 'Misteriose Scomparse al Villaggio di Rima',
-        description: 'Un villaggio il cui destino è ormai segnato... ma forse qualcuno può ancora ritrovare la speranza.',
+        //quest: 'Misteriose Scomparse al Villaggio di Rima',
+        //description: 'Un villaggio il cui destino è ormai segnato... ma forse qualcuno può ancora ritrovare la speranza.',
         trigger: [[
             [1908, 1147],
             [1916, 1246],
@@ -229,8 +229,8 @@ var cities = [
         height: 294,
         popupx: 0,
         popupy: 0,
-        quest: 'Nella Tana del Bisciòn di Brena',
-        description: 'Un piccolo villaggio e un enorme albero custode, stravolti da un oscura leggenda.',
+        //quest: 'Nella Tana del Bisciòn di Brena',
+        //description: 'Un piccolo villaggio e un enorme albero custode, stravolti da un oscura leggenda.',
         trigger: [[
             [1625, 1772],
             [1635, 1882],
@@ -264,8 +264,8 @@ var cities = [
         height: 265,
         popupx: 0,
         popupy: 0,
-        quest: 'Nel Sogno della Torre d\'Inverno',
-        description: 'Una faida vecchia di un secolo sopita, ma non spenta, sotto un manto di rancore e magia.',
+        //quest: 'Nel Sogno della Torre d\'Inverno',
+        //description: 'Una faida vecchia di un secolo, sopita sotto un manto di rancore e magia.',
         trigger: [[
             [2121, 2269],
             [2128, 2380],
@@ -352,8 +352,8 @@ var cities = [
         height: 257,
         popupx: 0,
         popupy: 0,
-        quest: 'Il Tesoro oltre il Ponte del Diavolo',
-        description: 'La brama e la scaltrezza dei nani fu la loro rovina. Ma ora nuove forze giocano con la loro eredità.',
+        //quest: 'Il Tesoro oltre il Ponte del Diavolo',
+        //description: 'La brama e la scaltrezza dei nani fu la loro rovina. Ma ora nuove forze giocano con la loro eredità.',
         trigger: [[
             [800, 1629],
             [808, 1757],

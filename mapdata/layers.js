@@ -173,24 +173,52 @@ function createRegion(data) {
 }
 
 /* CREA IL POI */
-/*function createPOI(imagePath, bounds, data) {
+function createPOI(data) {
+
+
+    var poiIcon = L.icon({
+        iconUrl: data.image,
+        iconSize: [60, 60],
+        iconAnchor: [30, 30],
+        popupAnchor: [30+data.popupx, 30+data.popupy]
+    });
+
+
+    var poiIconHover = L.icon({
+        iconUrl: data.image,
+        iconSize: [80, 80],
+        iconAnchor: [40, 40],
+        popupAnchor: [0+data.popupx, -40+data.popupy]
+    });
 
     var marker = L.marker(
         [data.y, data.x],
         {
+            icon: poiIcon,
             pane: 'poi'
         }
     ).addTo(poiLayer);
 
     marker.bindPopup(`
         <div class="poiInfo">
+            <div class="questLabel">AVVENTURA</div>
             <h3>${data.nome}</h3>
             <div>${data.descrizione}</div>
         </div>
-    `);
+    `, {
+        className: 'poiPopup'
+    });
+
+    marker.on('mouseover', function() {
+        marker.setIcon(poiIconHover);
+    });
+
+    marker.on('mouseout', function() {
+        marker.setIcon(poiIcon);
+    });
 
     return marker;
-}*/
+}
 
 /* REGOLA IL RIDIMENSIONAMENTO DELLA CITTA' */
 function scaleBoundsCities(bounds, scale) {
@@ -245,11 +273,11 @@ regions.forEach(function(regionData) {
     createRegion(regionData);
 });
 
-/*poi.forEach(function(poiData) {
+poi.forEach(function(poiData) {
     createPOI(poiData);
-});*/
+});
 
 /* INSERISCE LE REGIONI, LE CITTA' E I POI NELLA MAPPA */
 regionsLayer.addTo(map);
 citiesLayer.addTo(map);
-//poiLayer.addTo(map);
+poiLayer.addTo(map);
