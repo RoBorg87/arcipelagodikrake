@@ -1,5 +1,5 @@
 // 1. Definiamo la mappa, definiamo le dimensioni in pixel della tua immagine [Altezza, Larghezza]
-var imagePath = 'images/Mappa/Arcipelago di Krake 2.PNG';
+var imagePath = 'images/Mappa/Arcipelago di Krake.jpg';
 var mapHeight = 3072;
 var mapWidth = 3072;
 var mapGridX = mapWidth; // Larghezza della griglia (= mapWidth per equivalerla ai pixel)
